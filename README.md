@@ -1,5 +1,12 @@
 # python_intern
 ---
+## Docker-контейнеризация
+В репозиторий добавлен Dockerfile, а также список зависимостей requirements.txt.
+- Были установлены необходимые зависимости в виртуальной среде (python venv): requests, fastapi, uvicorn
+- Экспорт зависимостей: pip freeze > requirements.txt
+- Создание Dockerfile с ипользованием зависимостей из requirements.txt
+- Создание контейнера (Docker image): docker build -t is_alive_host_image .
+- Запуск приложения в Docker с ключом порта: docker run -p 8000:8000 is_alive_host_image
 
 ## requirements
 
