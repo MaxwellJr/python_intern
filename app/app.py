@@ -11,4 +11,3 @@ def is_alive_host(hostname):
     except requests.ConnectionError:
         return False
     return is_alive
-    
